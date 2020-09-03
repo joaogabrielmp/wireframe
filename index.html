@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <script src="drawWireframe.js"></script>
+
+  <div id="wrapper">
+    <div id="wireframe" class="grid-container"></div>
+
+    <div id="inputArea">
+      <label for="column">Colunas:</label>
+      <input type="text" id="column" name="column">
+  
+      <label for="row">Linhas:</label>
+      <input type="text" id="row" name="row">
+    </div>
+   
+    <button 
+      id="button" 
+      type="button" 
+      onclick="drawWireframe(document.getElementById('wireframe'), column.value, row.value)"
+    >
+      Enviar
+    </button>
+  </div>
+</body>
+</html>
